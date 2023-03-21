@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    {% for townhall in all_townhalls %}
+        <div>
+        {{ townhall.text }}
+            <p></p>
+        <img src="{{ townhall.thumbnail.url }}">
+        </div>
+    {% endfor %}
+
+{% endblock %}
